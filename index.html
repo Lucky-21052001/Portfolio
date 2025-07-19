@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky Mishra - Data Engineer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-xl font-bold text-gray-800">Lucky Mishra</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="text-gray-600 hover:text-blue-600">About</a>
+                    <a href="#experience" class="text-gray-600 hover:text-blue-600">Experience</a>
+                    <a href="#skills" class="text-gray-600 hover:text-blue-600">Skills</a>
+                    <a href="#contact" class="text-gray-600 hover:text-blue-600">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg pt-20 pb-20">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <div class="mb-8">
+                <img src="./portfolio_photo.jpeg" alt="Lucky Mishra" class="w-48 h-48 rounded-full mx-auto mb-6 shadow-2xl border-4 border-white">
+            </div>
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">Lucky Mishra</h1>
+            <p class="text-xl md:text-2xl text-blue-100 mb-8">Data Engineer | Azure Expert | Big Data Specialist</p>
+            <div class="flex justify-center space-x-4">
+                <a href="./2025_Lucky_Resume.pdf" download class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition">
+                    <i class="fas fa-download mr-2"></i>Download Resume
+                </a>
+                <a href="#contact" class="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition">
+                    Get In Touch
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">About Me</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Passionate Data Engineer with expertise in Azure cloud ecosystem and big data processing. 
+                    Experienced in building scalable data pipelines, implementing ETL processes, and working with 
+                    modern data architectures to drive business insights.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center card-hover bg-gray-50 p-6 rounded-lg">
+                    <i class="fas fa-cloud text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Cloud Expert</h3>
+                    <p class="text-gray-600">Proficient in Azure and AWS cloud platforms with hands-on experience in data services</p>
+                </div>
+                <div class="text-center card-hover bg-gray-50 p-6 rounded-lg">
+                    <i class="fas fa-database text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Big Data</h3>
+                    <p class="text-gray-600">Expert in Apache Spark, PySpark, and modern big data processing frameworks</p>
+                </div>
+                <div class="text-center card-hover bg-gray-50 p-6 rounded-lg">
+                    <i class="fas fa-cogs text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Data Pipelines</h3>
+                    <p class="text-gray-600">Skilled in building robust ETL pipelines using Azure Data Factory and Databricks</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Professional Experience</h2>
+            </div>
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+                    <div class="flex items-center mb-6">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjQTEwMEZGIi8+CjxwYXRoIGQ9Ik0yMCAzMkMxNi42ODYzIDMyIDEzLjUwNTQgMzAuNjgzOSAxMS4xNzE2IDI4LjM1MDNDOC44Mzc4NSAyNi4wMTY2IDcuNTIxNzMgMjIuODM1NyA3LjUyMTczIDE5LjUyMTdDNy41MjE3MyAxNi4yMDc3IDguODM3ODUgMTMuMDI2OCAxMS4xNzE2IDEwLjY5MzFDMTMuNTA1NCA4LjM1OTUgMTYuNjg2MyA3LjA0MzQ4IDIwIDcuMDQzNDhDMjMuMzEzNyA3LjA0MzQ4IDI2LjQ5NDYgOC4zNTk1IDI4LjgyODQgMTAuNjkzMUMzMS4xNjIxIDEzLjAyNjggMzIuNDc4MyAxNi4yMDc3IDMyLjQ3ODMgMTkuNTIxN0MzMi40NzgzIDIyLjgzNTcgMzEuMTYyMSAyNi4wMTY2IDI4LjgyODQgMjguMzUwM0MyNi40OTQ2IDMwLjY4MzkgMjMuMzEzNyAzMiAyMCAzMloiIGZpbGw9IndoaXRlIi8+Cjx0ZXh0IHg9IjIwIiB5PSIyNSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ExMDBGRiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QTwvdGV4dD4KPC9zdmc+" alt="Accenture" class="w-12 h-12 mr-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-800">Application Development Associate</h3>
+                            <p class="text-blue-600 font-semibold">Accenture</p>
+                            <p class="text-gray-600">2023 - Present</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-600 mt-1 mr-3"></i>
+                            Developed and maintained data pipelines using Azure Data Factory and Databricks
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-600 mt-1 mr-3"></i>
+                            Implemented ETL processes for large-scale data processing using PySpark
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-600 mt-1 mr-3"></i>
+                            Collaborated on cloud migration projects and data warehouse optimization
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-600 mt-1 mr-3"></i>
+                            Worked with cross-functional teams to deliver data solutions for enterprise clients
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Technical Skills</h2>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Programming Languages -->
+                <div class="bg-gray-50 p-6 rounded-lg card-hover">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Programming</h3>
+                    <div class="space-y-3">
+                        <div class="flex justify-between">
+                            <span class="text-gray-700">Python</span>
+                            <span class="text-blue-600 font-semibold">Expert</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-700">SQL</span>
+                            <span class="text-blue-600 font-semibold">Advanced</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-700">Java</span>
+                            <span class="text-blue-600 font-semibold">Intermediate</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-700">HiveQL</span>
+                            <span class="text-blue-600 font-semibold">Advanced</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Big Data -->
+                <div class="bg-gray-50 p-6 rounded-lg card-hover">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Big Data</h3>
+                    <div class="space-y-3">
+                        <div class="flex justify-between">
+                            <span class="text-gray-700">Apache Spark</span>
+                            <span class="text-blue-600 font-semibold">Expert</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-700">PySpark</span>
+                            <span class="text-blue-600 font-semibold">Expert</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-700">Azure Data Factory</span>
+                            <span class="text-blue-600 font-semibold">Advanced</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-700">Databricks</span>
+                            <span class="text-blue-600 font-semibold">Advanced</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cloud Platforms -->
+                <div class="bg-gray-50 p-6 rounded-lg card-hover">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Cloud</h3>
+                    <div class="space-y-3">
+                        <div class="flex justify-between">
+                            <span class="text-gray-700">Microsoft Azure</span>
+                            <span class="text-blue-600 font-semibold">Advanced</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-700">Amazon AWS</span>
+                            <span class="text-blue-600 font-semibold">Intermediate</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-700">Azure Synapse</span>
+                            <span class="text-blue-600 font-semibold">Advanced</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Databases -->
+                <div class="bg-gray-50 p-6 rounded-lg card-hover">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Databases</h3>
+                    <div class="space-y-3">
+                        <div class="flex justify-between">
+                            <span class="text-gray-700">PostgreSQL</span>
+                            <span class="text-blue-600 font-semibold">Advanced</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-700">MongoDB</span>
+                            <span class="text-blue-600 font-semibold">Intermediate</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-700">Data Lakes</span>
+                            <span class="text-blue-600 font-semibold">Advanced</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Get In Touch</h2>
+                <p class="text-lg text-gray-600">Ready to discuss data engineering opportunities</p>
+            </div>
+            <div class="max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Contact Information</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-envelope text-blue-600 w-6"></i>
+                                <span class="text-gray-700 ml-3">luckymishra310118@gmail.com</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-phone text-blue-600 w-6"></i>
+                                <span class="text-gray-700 ml-3">+91-9319073062</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fab fa-linkedin text-blue-600 w-6"></i>
+                                <a href="https://www.linkedin.com/in/lucky-mishra-a63647227/" class="text-blue-600 ml-3 hover:underline">LinkedIn Profile</a>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fab fa-github text-blue-600 w-6"></i>
+                                <a href="https://github.com/Lucky-21052001" class="text-blue-600 ml-3 hover:underline">GitHub Profile</a>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-code text-blue-600 w-6"></i>
+                                <a href="https://leetcode.com/u/Lucky2105/" class="text-blue-600 ml-3 hover:underline">LeetCode Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <form class="space-y-6">
+                            <div>
+                                <label class="block text-gray-700 font-semibold mb-2">Name</label>
+                                <input type="text" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-semibold mb-2">Email</label>
+                                <input type="email" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-semibold mb-2">Message</label>
+                                <textarea rows="4" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p>&copy; 2025 Lucky Mishra. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
