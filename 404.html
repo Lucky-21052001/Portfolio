@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+// GitHub Pages SPA redirect - handles 404s for React Router
+// Store the current pathname
+sessionStorage.redirect = location.pathname;
+</script>
+<title>Page Redirection</title>
+</head>
+<body>
+<script>
+// Immediately redirect to index.html
+location.replace(location.origin + location.pathname.split("/").slice(0, -1).join("/") + "/index.html" + location.search + "#" + location.pathname);
+</script>
+</body>
+</html>
